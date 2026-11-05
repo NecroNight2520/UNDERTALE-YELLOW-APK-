@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNDERTALE YELLOW - Android Port</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #101010;
+    color: #f5e6b3;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    padding: 25px 15px 10px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.lang-switch {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #181818;
+    padding: 12px;
+    border-bottom: 1px solid #55451c;
+}
+
+button {
+    background: #e5b82e;
+    color: #17120a;
+    border: none;
+    padding: 10px 22px;
+    margin: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #ffdc62;
+}
+
+section {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 25px;
+    border-bottom: 1px solid #55451c;
+}
+
+h1, h2 {
+    color: #ffcf43;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.download {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #e5b82e;
+    color: #17120a;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.download:hover {
+    background: #ffdc62;
+}
+
+footer {
+    padding: 30px 15px;
+    color: #999;
+    font-size: 13px;
+}
+
+[hidden] {
+    display: none !important;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="Yellow.png"
+         alt="UNDERTALE Yellow"
+         class="hero-image">
+</header>
+
+<div class="lang-switch">
+    <button onclick="setLanguage('ja')">日本語</button>
+    <button onclick="setLanguage('en')">English</button>
+</div>
+
+<main>
+
+<div id="ja">
+
+<section>
+    <h1>UNDERTALE YELLOW</h1>
+    <h2>Unofficial Android Port</h2>
+    <p>
+        UNDERTALE Yellow 日本語版の<br>
+        非公式Android移植プロジェクトです。
+    </p>
+</section>
+
+<section>
+    <h2>ABOUT</h2>
+    <p>
+        本プロジェクトは、UNDERTALE Yellowを
+        Androidスマートフォンで遊べるようにするため、
+        個人で制作した非公式移植版です。
+    </p>
+</section>
+
+<section>
+    <h2>FEATURES</h2>
+    <p>
+        ・Android向けに移植<br>
+        ・日本語対応<br>
+        ・スマートフォンでプレイ可能
+    </p>
+</section>
+
+<section>
+    <h2>DOWNLOAD</h2>
+    <p>Android版APKはこちらから。</p>
+    <a class="download" href="#" target="_blank">
+        DOWNLOAD APK
+    </a>
+    <p>※配布リンクは公開前に設定してください。</p>
+</section>
+
+<section>
+    <h2>CREDITS</h2>
+    <p>
+        Original Game: UNDERTALE Yellow Team<br>
+        Japanese Translation: Japanese Translation Team<br>
+        Android Port: Independent Fan Project
+    </p>
+</section>
+
+<section>
+    <h2>DISCLAIMER</h2>
+    <p>
+        本プロジェクトは非公式のファン制作物です。
+        UNDERTALE Yellow本家および日本語翻訳チームとは
+        関係ありません。
+    </p>
+    <p>
+        原作の権利は各権利者に帰属します。
+    </p>
+</section>
+
+</div>
+
+<div id="en" hidden>
+
+<section>
+    <h1>UNDERTALE YELLOW</h1>
+    <h2>Unofficial Android Port</h2>
+    <p>
+        An unofficial Android port of
+        the Japanese version of UNDERTALE Yellow.
+    </p>
+</section>
+
+<section>
+    <h2>ABOUT</h2>
+    <p>
+        This is an independent fan project
+        that brings UNDERTALE Yellow
+        to Android smartphones.
+    </p>
+</section>
+
+<section>
+    <h2>FEATURES</h2>
+    <p>
+        ・Android port<br>
+        ・Japanese language support<br>
+        ・Designed for smartphones
+    </p>
+</section>
+
+<section>
+    <h2>DOWNLOAD</h2>
+    <p>Get the Android APK here.</p>
+    <a class="download" href="#" target="_blank">
+        DOWNLOAD APK
+    </a>
+    <p>The download link will be added when available.</p>
+</section>
+
+<section>
+    <h2>CREDITS</h2>
+    <p>
+        Original Game: UNDERTALE Yellow Team<br>
+        Japanese Translation: Japanese Translation Team<br>
+        Android Port: Independent Fan Project
+    </p>
+</section>
+
+<section>
+    <h2>DISCLAIMER</h2>
+    <p>
+        This is an unofficial fan-made project.
+        It is not affiliated with UNDERTALE Yellow Team
+        or the Japanese Translation Team.
+    </p>
+    <p>
+        All original rights belong to their respective owners.
+    </p>
+</section>
+
+</div>
+
+</main>
+
+<footer>
+    UNDERTALE YELLOW - UNOFFICIAL ANDROID PORT
+</footer>
+
+<script>
+function setLanguage(lang) {
+    document.getElementById("ja").hidden = lang !== "ja";
+    document.getElementById("en").hidden = lang !== "en";
+    document.documentElement.lang = lang;
+    window.scrollTo(0, 0);
+}
+</script>
+
+</body>
+</html>
